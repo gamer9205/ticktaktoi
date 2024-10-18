@@ -1,3 +1,4 @@
+import model.Player
 import model.Symbol
 import kotlin.Array
 
@@ -13,9 +14,26 @@ class GameBoard {
        for (i in 0 until MAX_ROW){
            for (j in 0 until MAX_COLUMN){
                print(content[i][j] ?: " ")
+               if (j<2)   println("----------")
+
            }
+           println("----------")
        }
     }
+    fun isCellEmpty(row: Int,column:Int )=content[row][column]==null
+    fun isWiner( currentPlayer: Player):Boolean{
+        val symb=currentPlayer.symbol
+        for (i in 0 until 3){
+            if (content[i][0]==symb &&content[i][1]==symb && content[i][2]==symb) {
+                return true
+            }
+        }
+        for ()
+
+        return true
+    }
+
+
 
 
 
