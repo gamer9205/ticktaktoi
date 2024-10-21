@@ -1,7 +1,7 @@
 import model.Player
 import model.Symbol
 import kotlin.Array
-
+import controller.GameController
 class GameBoard {
     private  val  content= Array(3){arrayOfNulls<Symbol>(size = 3)}
 // set cel
