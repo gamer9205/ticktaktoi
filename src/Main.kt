@@ -4,4 +4,5 @@ import controller.GameController
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
    val game=GameController()
+   game.playGane()
 }
